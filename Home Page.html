@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>My page</title>
+</head>
+<body>
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <h2><a href="#" class="logo">Logo</a></h2>
+            <div class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Info</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <label for="check">
+                <i class="fas fa-bars menu-btn"></i>
+                <i class="fas fa-times close-btn"></i>
+            </label>
+        </header>
+        <div class="content">
+            <div class="info">
+                <h2>Like Nature <br><span>Be creative!</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio doloribus fuga pariatur corrupti eveniet incidunt ducimus maxime aperiam vero provident sequi, nesciunt eius. Delectus sequi a tempore saepe nostrum quae!Optio doloribus fuga pariatur corrupti eveniet incidunt ducimus maxime aperiam vero provident sequi, nesciunt eius. Delectus sequi a tempore saepe nostrum quae!</p>
+                <a href="#" class="info-btn">More Info</a>
+            </div>
+        </div>
+        <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </section>
+    <form action="process_contact_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company">
+        <br>
+        <label for="email">E-Mail Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br>
+        <input type="submit" value="Send">
+      </form>
+    
+</body>
+</html>
